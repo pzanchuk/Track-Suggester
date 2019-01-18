@@ -22,7 +22,8 @@
       </div>
 
       <div class="course-list">
-        <p>Here is the list of courses we currently provide at our training school</p>
+        <br>
+        <p><em>Here is the list of courses we currently provide:</em></p>
         <button id="php" type="button" class="btn btn-info">PHP/Drupal</button>
         <button id="csharp" type="button" class="btn btn-info">C#/.NET</button>
         <button id="java" type="button" class="btn btn-info">JAVA/Android</button>
@@ -36,12 +37,12 @@
         </div>
         <div class="csharp">
           <p>
-            C#(pronounced C sharp) is a general-purpose, multi-paradigm programming language encompassing strong typing, imperative, declarative, functional, generic, object-oriented (class-based), and component-oriented programming disciplines.[16] It was developed around 2000 by Microsoft within its .NET initiative and later approved as a standard by Ecma (ECMA-334) and ISO (ISO/IEC 23270:2006). C# is one of the programming languages designed for the Common Language Infrastructure.
+            C#(pronounced C sharp) is a general-purpose, multi-paradigm programming language encompassing strong typing, imperative, declarative, functional, generic, object-oriented (class-based), and component-oriented programming disciplines. It was developed around 2000 by Microsoft within its .NET initiative and later approved as a standard by Ecma (ECMA-334) and ISO (ISO/IEC 23270:2006). C# is one of the programming languages designed for the Common Language Infrastructure.
           </p>
         </div>
         <div class="java">
           <p>
-            Java is a general-purpose computer-programming language that is concurrent, class-based, object-oriented,[15] and specifically designed to have as few implementation dependencies as possible.
+            Java is a general-purpose computer-programming language that is concurrent, class-based, object-oriented, and specifically designed to have as few implementation dependencies as possible.
           </p>
         </div>
         <div class="css">
@@ -52,25 +53,27 @@
           </p>
         </div>
       </div>
-      <div>
-          <p>Please use our form  below to determine which languge is best for you </p>
-      </div>
+        <hr>
+        <p class="pleaseFillOut">
+          <strong>Please use our form  below to determine which languge is best for you.</strong>
+        </p>
+        <hr>
 
       <form id="mainform">
         <div class="row">
-          <div class="col-md-6 well">
+          <div class="col-md-6 ">
             <label for="name">Pleae enter your name</label>
             <input id="name" class="form-control" type="text" placeholder="ex: Pavel Zanchuk">
           </div>
-          <div class="col-md-6 well">
+          <div class="col-md-6 ">
             <label for="city">Please enter your current city </label>
             <input id="city" placeholder="ex: Seattle" class="form-control" type="text">
           </div>
         </div>
 
         <div class="row row-eq-height ">
-          <div class="col-md-6 well">
-            <label for="radioSelector">Which one of these wpuld you be interested the most?</label>
+          <div class="col-md-6">
+            <label for="radioSelector">Which one of these would you be interested in the most?</label>
             <div class="form-check">
               <input class="form-check-input" type="radio" name="interest" value="1" checked>
               <label class="form-check-label" for="interest">Creating web apps</label>
@@ -88,7 +91,7 @@
               <label class="form-check-label" for="interest">Nothing! Just make a big $$$$$</label>
             </div>
           </div>
-          <div class="col-md-6 well">
+          <div class="col-md-6">
             <label for="dislikes">Pick something you dislike the most:</label>
             <select class="form-control" id="dislike">
               <option value="1">Working with colors and design</option>
@@ -99,17 +102,22 @@
             <label for="dropdownSelectorYesNo">Do you have any previous exepience in coding?</label>
             <select class="form-control" id="experience">
               <option selected>Choose...</option>
-              <option>Yes</option>
-              <option>No</option>
+              <option value="1">Yes</option>
+              <option value="2">No</option>
             </select>
           </div>
         </div>
-        <button type="submit"> Submit</button>
+        <hr>
+        <button class="btn btn-success" type="submit"> Submit</button>
       </form>
+      <br>
       <div class="result">
         <p>Welcome to our webpage <span class="name"></span>. Based on the information we resieved from you,
-          it looks like your best option is going to be <span class="language"></span>. Also, we see that you<span class="experience">
+          it looks like your best option is going to be <span class="language"></span>.
           </span></p>
+      </div>
+      <div class="result2">
+        Also, we noticed that you <span class="experience"></span> have experience in coding. Either way, we wish you good luck.
       </div>
     </div>
   </body>

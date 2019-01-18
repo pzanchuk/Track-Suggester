@@ -8,17 +8,17 @@
 }
 
 .header{
-  border: 1px solid red;
   height: 180px;
 }
 
-.php, .csharp, .java, .css, .result{
+.php, .csharp, .java, .css, .result, .result2{
   display: none;
 }
 
 ul {
   list-style-type: none;
 }
+
 li{
   padding-left: 0;
 }
@@ -28,4 +28,12 @@ li{
   display: -webkit-flex;
   display: -ms-flexbox;
   display:         flex;
+}
+
+.pleaseFillOut{
+  text-align: center
+}
+
+.course-list{
+  text-align: center;
 }
