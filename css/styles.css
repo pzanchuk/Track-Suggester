@@ -11,11 +11,8 @@
   border: 1px solid red;
   height: 180px;
 }
-.container{
-  border: 1px solid blue;
-}
 
-.php, .csharp, .java, .css{
+.php, .csharp, .java, .css, .result{
   display: none;
 }
 
@@ -24,4 +21,11 @@ ul {
 }
 li{
   padding-left: 0;
+}
+
+.row-eq-height {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display:         flex;
 }
