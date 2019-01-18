@@ -11,8 +11,7 @@
     <div class="container">
       <div class="header">
         <h1>Welcome to programming language suggester</h1>
-        <p>Deciding what programming language to learn could be a real struggle.
-          We are going to help to determine what lanuage suites your needs best.
+        <p>If you’re looking to learn how to code, the sheer number of programming languages may be overwhelming – what language should you indeed learn?
         </p>
       </div>
       <div class="underHeader">
@@ -30,41 +29,76 @@
         <button id="css"type="button" class="btn btn-info">CSS/Design</button>
 
         <div class="php">
-          <p>What will you learn:</p>
-          <ul>
-            <li>PHP</li>
-            <li>THAT</li>
-            <li>AND THIS</li>
-          </ul>
+          <p>
+            PHP is a popular general-purpose scripting language that is especially suited to web development.
+            Fast, flexible and pragmatic, PHP powers everything from your blog to the most popular websites in the world.
+          </p>
         </div>
         <div class="csharp">
-          <p>What will you learn:</p>
-          <ul>
-            <li>SHARP</li>
-            <li>THAT</li>
-            <li>AND THIS</li>
-          </ul>
+          <p>
+            C#(pronounced C sharp) is a general-purpose, multi-paradigm programming language encompassing strong typing, imperative, declarative, functional, generic, object-oriented (class-based), and component-oriented programming disciplines.[16] It was developed around 2000 by Microsoft within its .NET initiative and later approved as a standard by Ecma (ECMA-334) and ISO (ISO/IEC 23270:2006). C# is one of the programming languages designed for the Common Language Infrastructure.
+          </p>
         </div>
         <div class="java">
-          <p>What will you learn:</p>
-          <ul>
-            <li>JAVA</li>
-            <li>THAT</li>
-            <li>AND THIS</li>
-          </ul>
+          <p>
+            Java is a general-purpose computer-programming language that is concurrent, class-based, object-oriented,[15] and specifically designed to have as few implementation dependencies as possible.
+          </p>
         </div>
         <div class="css">
-          <p>What will you learn:</p>
-          <ul>
-            <li>CSS</li>
-            <li>THAT</li>
-            <li>AND THIS</li>
-          </ul>
+          <p>
+            Cascading Style Sheets (CSS) is a style sheet language used for describing the presentation of a document written in a markup language like HTML. CSS is a cornerstone technology of the World Wide Web, alongside HTML and JavaScript.[2]
+
+            CSS is designed to enable the separation of presentation and content, including layout, colors, and fonts.[3] This separation can improve content accessibility, provide more flexibility and control in the specification of presentation characteristics, enable multiple web pages to share formatting by specifying the relevant CSS in a separate .css file, and reduce complexity and repetition in the structural content.
+          </p>
         </div>
       </div>
       <div class="">
-          <p>Please use out toot below to determine which languge is best for you. </p>
+          <p>Please use our form  below to determine which languge is best for you </p>
       </div>
+
+      <form class="" action="index.html" method="post">
+
+        <div class="row">
+          <div class="col-md-6 well">
+            <label for="name">Pleae enter your name</label>
+            <input class="form-control" type="text" placeholder="Default input">
+          </div>
+          <div class="col-md-6 well">
+            <label for="city">Please enter your current city </label>
+            <input placeholder="input name here" class="form-control" type="text" placeholder="Default input">
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-6 well">
+            <label for="radioSelector">Which one of these wpuld you be interested the most?</label>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+              <label class="form-check-label" for="exampleRadios1">Creating web apps</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+              <label class="form-check-label" for="exampleRadios1">Creating desktop apps</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+              <label class="form-check-label" for="exampleRadios1">Working on UI(user interface)</label>
+            </div>
+          </div>
+          <div class="col-md-6 well">
+            <label for="dropdownSelector">Pick something you dislike the most:</label>
+            <select class="form-control">
+              <option></option>
+              <option>Working with colors and design</option>
+              <option>Dealing with RAM algorithms </option>
+              <option>Being a manager and tell people what to do</option>
+            </select>
+
+          </div>
+        </div>
+
+        <div>
+      </form>
     </div>
   </body>
 </html>

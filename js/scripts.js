@@ -1,9 +1,5 @@
 $(document).ready(function() {
 
-
-
-
-
   $("button#php").click(function() {
     $(".csharp").hide();
     $(".java").hide();

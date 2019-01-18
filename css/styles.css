@@ -18,3 +18,10 @@
 .php, .csharp, .java, .css{
   display: none;
 }
+
+ul {
+  list-style-type: none;
+}
+li{
+  padding-left: 0;
+}
