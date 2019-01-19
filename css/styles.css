@@ -3,24 +3,18 @@
 }
 
 .header h1, .header p{
-  padding-top: 20px;
+  padding-top: 30px;
   text-align: center;
 }
 
 .header{
+  border-radius: 10px;
+  background-color: #e1e6ef;
   height: 180px;
 }
 
 .php, .csharp, .java, .css, .result, .result2{
   display: none;
-}
-
-ul {
-  list-style-type: none;
-}
-
-li{
-  padding-left: 0;
 }
 
 .row-eq-height {
@@ -36,4 +30,12 @@ li{
 
 .course-list{
   text-align: center;
+}
+
+.underHeader{
+  font-size: 15px;
+}
+
+label{
+  color: #72767c;
 }

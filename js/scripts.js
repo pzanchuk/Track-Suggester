@@ -12,8 +12,6 @@ $(document).ready(function() {
     $(".city").text(inputCity);
     $(".name").text(inputName);
 
-
-
     if(experience === "1"){
       $(".experience").text("do");
     }else if(experience === "2"){
@@ -22,16 +20,19 @@ $(document).ready(function() {
       $(".result2").hide();
     }
 
-
-
-    if(interest === 1 && dislike === 2 || interest === 1 && dislike === 3){
-      $(".language").text("PHP along with CSS");
-    }else if( interest === 2 && dislike === 1 || interest === 2 && dislike === 3){
-      $(".language").text("C# and .NET");
-    }else if(interest === 3 && dislike === 2 || interest === 3 && dislike === 3){
-      $(".language").text("HTML5, PHP, JQuery");
+    if(interest && dislike){
+      if(interest === 1 && dislike === 2 || interest === 1 && dislike === 3){
+        $(".language").text("PHP along with CSS");
+      }else if( interest === 2 && dislike === 1 || interest === 2 && dislike === 3){
+        $(".language").text("C# and .NET");
+      }else if(interest === 3 && dislike === 2 || interest === 3 && dislike === 3){
+        $(".language").text("HTML5, PHP, JQuery");
+      }else{
+        $(".language").text("Java and Android");
+      }
     }else{
-      $(".language").text("Java and Android");
+      alert("Please fill in the form");
+      $(".result").hide();
     }
 
       event.preventDefault();
@@ -64,7 +65,4 @@ $(document).ready(function() {
     $(".php").hide();
     $(".css").fadeToggle();
   });
-
-
-
 });
